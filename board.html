@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Boarding Pass</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            background-image: url("board.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%, 90%;
+        }
+        .boarding-pass {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Jagadesh Airlines</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Booking <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="avl.html">Airline Availability</a></li>
+                        <li><a href="board.html">Boarding Pass</a></li>
+                        <li><a href="book.html">Book a Ticket</a></li>
+                    </ul>
+                </li>
+                <li><a href="feed.html">Feedback</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="reg.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="boarding-pass">
+            <h4 class="text-center">Boarding Pass</h4>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <p><strong>Flight:</strong> ABC123</p>
+                    <p><strong>From:</strong> City A</p>
+                    <p><strong>Gate:</strong> A1</p>
+                    <p><strong>Seat:</strong> 15A</p>
+                </div>
+                <div class="col-6">
+                    <p><strong>Date:</strong> October 24, 2023</p>
+                    <p><strong>To:</strong> City B</p>
+                    <p><strong>Boarding Time:</strong> 14:30</p>
+                    <p><strong>Departure:</strong> 15:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
