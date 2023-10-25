@@ -6,9 +6,22 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Airline Feedback Form</title>
 </head>
+<script>
+    function adddata(){
+        localStorage.setItem("name", document.getElementById("t1").value);
+        localStorage.setItem("email", document.getElementById("t2").value);
+        localStorage.setItem("feedback", document.getElementById("t3").value);
+
+        document.write("Your feedback: ");
+        document.write("<br>Name: " + localStorage.getItem("name"));
+        document.write("<br>Email: " + localStorage.getItem("email"));
+        document.write("<br>Feedback: " + localStorage.getItem("feedback"));
+        
+    }
+</script>
 <style>
     body{
-            background-image: url("feed.jpg");
+            background-image: url("feed1.jpg");
             background-repeat: no-repeat;
             background-size: 100%, 90%;
         }
@@ -50,17 +63,17 @@
                         <form>
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                <input type="text" class="form-control" id="t1" placeholder="Enter your name" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                <input type="email" class="form-control" id="t2" placeholder="Enter your email" required>
                             </div>
                             <div class="form-group">
                                 <label for="feedback">Feedback</label>
-                                <textarea class="form-control" id="feedback" rows="4" placeholder="Share your feedback"></textarea>
+                                <textarea class="form-control" rows="4" id="t3" placeholder="Share your feedback" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block">Submit Feedback</button>
+                            <button type="submit" class="btn btn-primary btn-block" onclick="adddata()">Submit Feedback</button>
                         </form>
                     </div>
                 </div>
